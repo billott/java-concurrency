@@ -2,7 +2,7 @@ package org.billdott.concurrency;
 
 import java.util.Random;
 
-public class Deadlock implements Runnable {
+public class DeadlockThread implements Runnable {
 
 /*    
  * private static final Object resource1 = new Object();
@@ -20,8 +20,8 @@ public class Deadlock implements Runnable {
 //    	Above description explains Deadlock situation where two or more threads 
 //    	are blocked forever, waiting for each other.
 
-        Thread myThread1 = new Thread(new Deadlock(), "thread-1");
-        Thread myThread2 = new Thread(new Deadlock(), "thread-2");
+        Thread myThread1 = new Thread(new DeadlockThread(), "thread-1");
+        Thread myThread2 = new Thread(new DeadlockThread(), "thread-2");
         
         myThread1.start();
         myThread2.start();

@@ -1,6 +1,6 @@
 package org.billdott.concurrency;
 
-public class MyRunnale implements Runnable {
+public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
@@ -8,7 +8,7 @@ public class MyRunnale implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Thread myThread = new Thread(new MyRunnale(), "myRunnalbe");
+        Thread myThread = new Thread(new MyRunnable(), "myRunnalbe");
         myThread.start();
     }
 }
